@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Slider from "./components/Slider";
 import Testimonials from "./components/Testimonials";
+import TrialBanner from "./components/TrialBanner";
 
 function App() {
   return (
@@ -23,8 +24,9 @@ function App() {
             <Slider />
           </div>
 
-          <div className="bg-white-100 m-auto border border-indigo-500 ">
+          <div className="bg-white-100 m-auto ">
             <Testimonials />
+            <TrialBanner />
           </div>
         </div>
       </main>
