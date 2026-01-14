@@ -1,4 +1,5 @@
 import Banners from "./components/Banners";
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Slider from "./components/Slider";
@@ -28,6 +29,8 @@ function App() {
             <Testimonials />
             <TrialBanner />
           </div>
+
+          <Footer />
         </div>
       </main>
     </>
