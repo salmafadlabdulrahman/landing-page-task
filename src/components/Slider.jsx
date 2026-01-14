@@ -13,7 +13,8 @@ const Slider = () => {
   ]);
   return (
     <section>
-      <div className="mt-[108.16px] w-[1355px] h-[720px] pl-[91px] pr-[66px] relative bg-purple-300 m-auto rounded-[20px] flex">
+      {/*  */}
+      <div className=" w-[1355px] h-[720px] pl-[91px] pr-[66px] relative bg-purple-300 m-auto rounded-[20px] flex mt-[108.16px]">
         <div className="self-center w-[556px] ">
           <p className="font-medium text-[26px] leading-[40.04px]">
             Musicians like Jason use Setapp to push the limits of their

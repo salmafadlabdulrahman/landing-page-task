@@ -2,32 +2,30 @@ import Banners from "./components/Banners";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Slider from "./components/Slider";
+import Testimonials from "./components/Testimonials";
 
 function App() {
   return (
     <>
-      <header>
+      <header className="bg-black-600">
         <Navbar />
       </header>
       <main>
-        <section>
-          <Hero />
-          <Banners />
-        </section>
+        <div className="bg-black-600">
+          <section>
+            <Hero />
+            <Banners />
+          </section>
+        </div>
 
-        <div className=" relative">
+        <div className=" relative bg-black-600">
           <div className="">
             <Slider />
           </div>
 
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Perferendis libero tenetur ex ipsum doloremque dolores voluptatem
-            magnam harum laudantium quas, aperiam deleniti quos eveniet totam
-            sunt praesentium aut nihil corporis officia! Ducimus temporibus
-            dolor cupiditate delectus suscipit porro fugit rerum consequatur quo
-            deserunt quod corporis, iste, eius est iure amet.
-          </p>
+          <div className="bg-white-100 m-auto border border-indigo-500 ">
+            <Testimonials />
+          </div>
         </div>
       </main>
     </>

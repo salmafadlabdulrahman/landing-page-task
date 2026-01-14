@@ -7,7 +7,7 @@ import meeterBanner from "/assets/meeter-banner.png";
 import rightArrow from "/assets/right-arrow-long.png";
 const Banners = () => {
   return (
-    <section className="w-[1180px] border-y-1 border-gray-300  mt-[128px] m-auto pb-[89px]">
+    <section className="w-[1180px] border-y-1 border-gray-300  mt-[128px] m-auto pb-[89px]"> 
       <div className="mt-[100px] flex justify-between items-center">
         <h3 className="text-[36px] font-semibold tracking-[1px] text-[18px]">
           What you get on Setapp.
