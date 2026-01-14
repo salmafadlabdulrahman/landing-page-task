@@ -10,6 +10,7 @@ body {
 @theme {
   --color-black-600: #26262b;
   --color-black-500: #404547;
+  --color-gray-300: #E5E5E5;
   --color-white-100: #ffffff;
   --color-white-300: #f5f5f5;
   --color-pink-300: #df96ae;

@@ -1,3 +1,4 @@
+import Banners from "./components/Banners";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 
@@ -9,6 +10,7 @@ function App() {
       </header>
       <main>
         <Hero />
+        <Banners />
       </main>
     </>
   );
