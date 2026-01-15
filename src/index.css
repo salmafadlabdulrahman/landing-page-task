@@ -38,18 +38,6 @@ footer ul li {
   cursor: pointer;
 }
 
-@utility flex-between {
-  @apply flex items-center justify-between;
-}
-
-@utility flex-center {
-  @apply flex items-center justify-center;
-}
-
-@utility flex-end {
-  @apply flex items-center justify-end;
-}
-
 @utility hero-social-icons {
   @apply bg-white-100 rounded-md h-13 w-15.5 cursor-pointer;
 }
@@ -77,5 +65,25 @@ footer ul li {
 
   .sub-banners-text {
     @apply text-[26px] font-semibold;
+  }
+
+  .flex-between {
+    @apply flex items-center justify-between;
+  }
+
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+
+  .flex-end {
+    @apply flex items-center justify-end;
+  }
+
+  .footer-list li {
+    @apply h-8 text-sm text-gray-200 hover:text-white transition cursor-pointer;
+  }
+
+  .footer-terms-policy {
+    @apply text-xs text-gray-200 hover:text-white cursor-pointer transition;
   }
 }
