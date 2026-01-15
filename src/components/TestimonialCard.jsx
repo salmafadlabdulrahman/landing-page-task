@@ -32,7 +32,3 @@ const TestimonialCard = ({
 };
 
 export default TestimonialCard;
-
-{
-  /* w-[366px]  m-auto px-[22px] */
-}

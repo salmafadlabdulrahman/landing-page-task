@@ -37,27 +37,30 @@ const Testmonial_Cards = [
 ];
 
 const Testimonials = () => {
-  const [currentSlide, setCurrentSlide] = useState([
-    "img1",
-    "img2",
-    "img3",
-    "img4",
-    "img5",
-    "img6",
-  ]);
+  const slides = [1, 2, 3, 4, 5, 6];
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const nextSlide = () => {
+    setCurrentIndex((prev) => (prev + 1) % slides.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentIndex((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
+  };
+
   return (
-    <section className="w-[1260px] m-auto pt-[120px] text-black-600">
-      <div className="mt-[100px] flex justify-between items-center ">
+    <section className="w-315 m-auto pt-30 text-black-600">
+      <div className="mt-25 flex-between">
         <h3 className="text-[36px] font-semibold tracking-[1.3px] text-[18px]">
           Setapp in your words.
         </h3>
 
-        <div className="flex items-center justify-end gap-[25px]">
-          <p className="text-[18px] w-[300px] leading-[32.04px]">
+        <div className="flex-end gap-6.25">
+          <p className="text-[18px] w-75 leading-[32.04px]">
             What you say about how Setapp powers you up.
           </p>
 
-          <div className="flex items-center justify-end w-[300px] gap-[10px]">
+          <div className="flex-end w-75 gap-2.5">
             <img
               src={faceCircleIcon}
               alt="a blue circle with the letter f in it"
@@ -75,20 +78,35 @@ const Testimonials = () => {
         </div>
       </div>
 
-      <div className="flex items-center gap-[46px] justify-end mt-[25px]">
-        <img src={leftArrow} alt="a gray left arrow" />
-        <img src={rightArrow} alt="a gray right arrow" />
+      <div className="flex-end gap-11.5 mt-6.25">
+        <img
+          src={leftArrow}
+          alt="a gray left arrow"
+          onClick={prevSlide}
+          className="cursor-pointer"
+        />
+        <img
+          src={rightArrow}
+          alt="a gray right arrow"
+          onClick={nextSlide}
+          className="cursor-pointer"
+        />
       </div>
 
-      <div className="mt-[20px] flex items-center gap-[27px]">
+      <div className="mt-5 flex items-center gap-6.75">
         {Testmonial_Cards.map((card) => (
           <TestimonialCard {...card} />
         ))}
       </div>
 
-      <div className="flex gap-[25px] justify-center mb-[25px] mt-[32.99px]">
-        {currentSlide.map((slide) => (
-          <span className="w-[12px] h-[12px] bg-black-500 rounded-full"></span>
+      <div className="flex gap-6.25 justify-center mb-6.25 mt-[32.99px]">
+        {slides.map((_, index) => (
+          <span
+            key={index}
+            className={`w-3 h-3 rounded-full ${
+              index === currentIndex ? "bg-black-700" : "bg-gray-500"
+            }`}
+          ></span>
         ))}
       </div>
     </section>

@@ -11,13 +11,13 @@ import youtubeIcon from "/assets/footer-youtube-icon.png";
 
 const Footer = () => {
   return (
-    <footer className="pt-[10em] pr-[30px] pb-[40px]">
-      <div className="bg-gray-400 w-full h-[1px]"></div>
+    <footer className="pt-[1em] pr-7.5 pb-10 bg-black-600">
+      <div className="bg-black-400 w-full h-px"></div>
 
-      <div className="pl-[40px]">
-        <div className="h-[325px] flex items-center justify-between">
+      <div className="pl-10 mt-15">
+        <div className="h-81.25 flex justify-between">
           <div>
-            <div className="flex items-center gap-[12px] mt-[60px] ">
+            <div className="flex items-center gap-3">
               <img src={logo} alt="a yellow square" width={20} height={32} />
               <img
                 src={appName}
@@ -27,8 +27,8 @@ const Footer = () => {
               />
             </div>
 
-            <div className="mt-[78px]">
-              <div className="flex items-center gap-[3.04px]">
+            <div className="mt-19.5">
+              <div className="flex items-center gap-0.75">
                 <p>Updates from our team, written with love </p>
                 <img
                   src={heartIcon}
@@ -38,21 +38,21 @@ const Footer = () => {
                 />
               </div>
 
-              <div className="mt-[24px] flex items-center ">
+              <div className="mt-6 flex items-center ">
                 <input
                   type="text"
-                  className="bg-black-500 h-[50.22px] w-[388px] px-[12px] rounded-l-[6px] outline-none"
+                  className="bg-black-500 h-12.5 w-97 px-3 rounded-l-md outline-none"
                   placeholder="Enter your email"
                 />
-                <div className="bg-white-100 w-[54px] h-[50.22px] rounded-r-[6px] flex items-center justify-center ">
+                <div className="bg-white-100 w-13.5 h-[50.22px] rounded-r-md flex-center">
                   <img src={rightArrow} alt="a black right arrow" />
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="flex items-center mt-[60px]">
-            <div className="h-[325px] w-[230px]">
+          <div className="flex items-center">
+            <div className="h-81.25 w-57.5">
               <ul>
                 <li>Home</li>
                 <li>How It Works</li>
@@ -65,7 +65,7 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div className="h-[325px] w-[230px]">
+            <div className="h-81.25 w-57.5">
               <ul>
                 <li>About</li>
                 <li>Support</li>
@@ -80,7 +80,7 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div className="h-[325px] w-[230px]">
+            <div className="h-81.25 w-57.5">
               <ul>
                 <li>Getting started with Setapp</li>
                 <li>Remote access to other Mac</li>
@@ -94,27 +94,27 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-[40px] flex items-center justify-between">
-          <div className="flex items-center gap-[1px]">
+        <div className="mt-10 flex-between">
+          <div className="flex items-center gap-px">
             <span className="bg-gray-200">DMCA</span>
             <span className="bg-black-500 uppercase ">Protected</span>
           </div>
 
-          <div className="flex items-center gap-[10px] ">
+          <div className="flex items-center gap-2.5 ">
             <img src={flag} alt="an american flag" />
             <span className="text-[16px]">English</span>
             <img src={arrowDown} alt="a white arrow pointing down" />
           </div>
         </div>
 
-        <div className="mt-[40px] border-t-1 border-gray-300">
-          <div className="mt-[28px] flex items-center gap-[10px] justify-between">
-            <p className="text-[12px] ">
+        <div className="mt-10 border-t border-gray-300">
+          <div className="mt-7 flex-between gap-2.5 ">
+            <p className="text-[12px]">
               © 2023 Setapp Limited, 9 Tallow Street, Youghal, Co. Cork,
               P36YE14, Ireland. Reg. 584165. VAT ID: IE3425001BH
             </p>
 
-            <div className="flex items-center gap-[10px]">
+            <div className="flex items-center gap-2.5">
               <img
                 src={facebookIcon}
                 alt="a gray circle with the letter f in it "
@@ -128,9 +128,9 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="flex items-center gap-[12.67px] mt-[19px]">
-            <span className="text-gray-200 text-[12px]">Terms of Use</span>
-            <span className="text-gray-200 text-[12px]">Privacy Policy</span>
+          <div className="flex items-center gap-3.25 mt-4.75">
+            <span className="footer-terms-policy">Terms of Use</span>
+            <span className="footer-terms-policy">Privacy Policy</span>
           </div>
         </div>
       </div>

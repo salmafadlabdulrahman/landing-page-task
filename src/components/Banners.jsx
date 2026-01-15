@@ -5,21 +5,23 @@ import codeIcon from "/assets/code-icon.png";
 import meeterLogo from "/assets/meeter-logo.png";
 import meeterBanner from "/assets/meeter-banner.png";
 import rightArrow from "/assets/right-arrow-long.png";
+
 const Banners = () => {
   return (
-    <section className="w-[1180px] border-y-1 border-gray-300  mt-[128px] m-auto pb-[89px]"> 
-      <div className="mt-[100px] flex justify-between items-center">
-        <h3 className="text-[36px] font-semibold tracking-[1px] text-[18px]">
+    <section className="w-295 border-y border-gray-300 mt-32 m-auto pb-22.5">
+      <div className="mt-25 flex-between">
+        <h3 className="text-4xl font-semibold tracking-wide">
+          {" "}
           What you get on Setapp.
         </h3>
-        <p className="text-[18px] w-[600px] leading-[32.04px]">
+        <p className="text-[18px] w-150 leading-8">
           With a single monthly subscription at $9.99, you get 240+ apps for
           your Mac.
         </p>
       </div>
 
-      <div className="mt-[87.99px] bg-pink-300 rounded-[20px] px-[37px]">
-        <div className="flex items-center gap-[36px] pt-[60px] ">
+      <div className="mt-22 bg-pink-300 rounded-[20px] px-9.25">
+        <div className="flex items-center gap-9 pt-15">
           <img
             src={laptopIcon}
             alt="a pink laptop icon"
@@ -39,17 +41,17 @@ const Banners = () => {
         />
       </div>
 
-      <div className="flex items-center gap-[20px] mt-[20px] ">
-        <div className="bg-yellow-300 rounded-[20px] pb-[60px]">
-          <img src={codeBanner} alt="" width={580} height={400.51} />
-          <div className="px-[60px]">
+      <div className="flex items-center gap-5 mt-5">
+        <div className="bg-yellow-300 rounded-[20px] pb-15">
+          <img src={codeBanner} alt="a black square that has code in it" width={580} height={400.50} />
+          <div className="px-15">
             <img
               src={codeIcon}
               alt="a blue square with a play icon in it"
               width={80}
               height={80}
             />
-            <h4 className="text-[26px] font-semibold text-black-600">
+            <h4 className="sub-banners-text text-black-600 h-10">
               Write code
             </h4>
             <p className="text-[18px] text-black-600">
@@ -59,43 +61,42 @@ const Banners = () => {
         </div>
 
         <div>
-          <div className="bg-blue-300 rounded-[20px] pt-[60px]">
-            <div className="px-[60px]">
+          <div className="bg-blue-300 rounded-[20px] pt-15">
+            <div className="px-15">
               <img
                 src={meeterLogo}
                 alt="a blue circle with white sticks in it like sound waves"
                 width={68}
                 height={68}
               />
-              <h4 className="text-[26px] font-semibold mt-[19px]">
+              <h4 className="sub-banners-text mt-4.75">
                 Join meetings in a click
               </h4>
-              <p className="text-[18px] ">
+              <p className="text-[18px]">
                 Quickly access links to your meetings from menu bar
               </p>
             </div>
             <img
               src={meeterBanner}
-              alt=""
+              alt="a black square with zoom calls banners in it"
               width={580}
               height={360}
-              className=""
             />
           </div>
         </div>
       </div>
 
-      <div className="mt-[88.7px]">
-        <div className="flex items-center justify-center gap-[11px] ">
+      <div className="mt-22">
+        <div className="flex-center gap-2.75">
           <img src={rightArrow} alt="a white arrow pointing right" />
           <a to={"/"} className="font-medium text-[20px] tracking-[1.6px]">
             View all superpowers
           </a>
         </div>
 
-        <div className="mt-[88px] flex items-center justify-between">
+        <div className="mt-22 flex-between">
           <h3 className="font-semibold text-[36px]">Your Setapp journey.</h3>
-          <p className="text-[18px] w-[600px]">
+          <p className="text-[18px] w-150">
             Type in your task into Setapp search and get instant app
             recommendations.
           </p>

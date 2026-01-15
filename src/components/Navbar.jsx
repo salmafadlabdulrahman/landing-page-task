@@ -3,27 +3,36 @@ import flag from "/assets/flag.png";
 
 const Navbar = () => {
   return (
-    <nav className="flex items-center justify-between py-[1.272em] px-[2.5em]">
+    <nav className="flex-between px-[2.5em] mt-[1.5em]">
       <div>
         <img src={logo} alt="a yellow square shaped logo" />
       </div>
 
-      <div className="flex items-center gap-[1.5em]">
-        <ul className="flex items-center gap-[1.875em] font-medium tracking-[.9px]">
-          <li>How it works</li>
-          <li>All apps</li>
-          <li>Pricing</li>
-          <li>For Teams</li>
-          <li>Blog</li>
-          <li>Podcast</li>
+      <div className="flex items-center gap-[1.9em]">
+        <ul className="flex items-center gap-7.5 text-[14px] nav-text">
+          <li>
+            <a href="#"></a>How it works
+          </li>
+          <li>
+            <a href="#"></a>All apps
+          </li>
+          <li>
+            <a href="#"></a>For Teams
+          </li>
+          <li>
+            <a href="#"></a>Blog
+          </li>
+          <li>
+            <a href="#"></a>Podcast
+          </li>
         </ul>
 
-        <div className="bg-white w-[1px] h-[20px] "></div>
+        <div className="bg-white w-px h-5 "></div>
 
         <div className="flex items-center gap-[2em]">
           <img src={flag} alt="the american flag" />
-          <button className="font-medium tracking-[.9px]">Sign In</button>
-          <button className="w-[6.314em] h-[2em] rounded-md border border-white-100 tracking-[1px]">
+          <button className="nav-text">Sign In</button>
+          <button className="w-25.25 h-[33.29px] text-[14px] rounded-md border border-white-100 tracking-[1px]">
             Try Free
           </button>
         </div>
