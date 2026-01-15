@@ -80,7 +80,7 @@ footer ul li {
   }
 
   .footer-list li {
-    @apply h-8 text-sm text-gray-200 hover:text-white transition cursor-pointer;
+    @apply h-8 text-sm text-white cursor-pointer;
   }
 
   .footer-terms-policy {
