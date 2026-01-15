@@ -89,7 +89,7 @@ const Banners = () => {
       <div className="mt-22">
         <div className="flex-center gap-2.75">
           <img src={rightArrow} alt="a white arrow pointing right" />
-          <a to={"/"} className="font-medium text-[20px] tracking-[1.6px]">
+          <a href="/" className="font-medium text-[20px] tracking-[1.6px]">
             View all superpowers
           </a>
         </div>
